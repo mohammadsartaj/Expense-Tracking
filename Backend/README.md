@@ -76,7 +76,8 @@ The server will start on http://localhost:5000 by default.
 ```
 
 
-**🛠 Installing Key Technologies**
+**🛠 Installing Key Technologies :**
+---
 **1. MongoDB**
 Local Installation: Follow the official MongoDB installation guide.
 Cloud Instance: Use MongoDB Atlas for a cloud-based MongoDB setup.
