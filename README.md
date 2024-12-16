@@ -24,18 +24,20 @@ Welcome to **HisaabKitab**, a powerful daily-expenses sharing application design
    git clone https://github.com/your-username/HisaabKitab.git
    cd HisaabKitab
 2. Set up the Backend:
-
-  cd Backend
-  npm install
-
+   ```bash
+   cd Backend
+   npm install
 3. Set up the Client:
    ```bash
-  cd client
-  npm install
+   cd client
+   npm install
 4. Run the app:
    **.** Start the backend server:
+     ```bash
       cd Backend
-      npm run dev    
-   **.** Start the backend server:
+      npm run dev
+  **.** Start the backend server:
+      ```bash
       cd client
       npm run dev
+     
