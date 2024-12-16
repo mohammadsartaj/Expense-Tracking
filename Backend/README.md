@@ -106,28 +106,29 @@ CORS enables cross-origin requests between the client and the backend. Install i
 bash
 Copy code
 npm install cors
-📜 Scripts
+**📜 Scripts**
 Here are the main scripts defined in the package.json:
 
-Development:
+**Development:**
 
-bash
-Copy code
+```
 npm run dev
+```
 Starts the backend server with Nodemon for automatic restarts during development.
 
-Test:
-
-bash
-Copy code
+**Test:**
+```
 npm test
+```
 Placeholder for running backend tests.
 
-🛠 Tech Stack
+**🛠 Tech Stack**
+```
 Node.js: Runtime environment for the server.
 Express.js: Web framework for building APIs.
 MongoDB: NoSQL database for storing application data.
 Axios: For making HTTP requests.
 CORS: Middleware for handling cross-origin requests.
-📜 License
+```
+###**📜 License**
 This project is licensed under the ISC License. Feel free to use, modify, and contribute! 🚀
