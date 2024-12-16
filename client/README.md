@@ -44,3 +44,12 @@ Ensure you have the following installed:
 1. Navigate to the `client` directory:
    ```bash
    cd client
+2. Install dependencies:
+  ```bash
+  npm install
+  ```
+### **3. Development Server**
+Start the development server:
+```bash
+ npm run dev```
+
