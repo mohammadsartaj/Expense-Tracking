@@ -15,3 +15,27 @@ Welcome to **HisaabKitab**, a powerful daily-expenses sharing application design
 - **Responsive Notifications:** Stay updated with real-time notifications about dues and payments.
 
 ---
+
+
+## **🔧 Installation and Setup**
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/HisaabKitab.git
+   cd HisaabKitab
+2. Set up the Backend:
+
+  cd Backend
+  npm install
+
+3. Set up the Client:
+   ```bash
+  cd client
+  npm install
+4. Run the app:
+   **.** Start the backend server:
+      cd Backend
+      npm run dev    
+   **.** Start the backend server:
+      cd client
+      npm run dev
