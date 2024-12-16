@@ -365,6 +365,7 @@
 //////////////////////////////////////////////////
 
 import { useState } from "react";
+import { register } from "../../service/authApi.js"; // Using authApi.js for register API
 import PropTypes from "prop-types";
 import {
   Dialog,
@@ -387,10 +388,26 @@ export default function SignupModal({ isOpen, onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    setError("");
+    setMessage("");
+
+    try {
+      // Using register API from authApi.js
+      const { data } = await register(username, password);
+      console.log("Form Data submitted: ", username, password);
+      setMessage(data.message || "Registration successful!");
+      setUsername("");
+      setPassword("");
+    } catch (error) {
+      console.error("Registration error: ", error);
+      setError(
+        error.response?.data?.message ||
+          "An error occurred during registration."
+      );
+    }
+
     setIsLoading(false);
-    onClose();
+    onClose(); // Close modal on success or error
   };
 
   return (
@@ -407,7 +424,7 @@ export default function SignupModal({ isOpen, onClose }) {
             <Input
               id="username"
               type="text"
-              value="username"
+              value={username}
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Enter your username"
               className="bg-gray-800 text-white border-gray-700"
@@ -419,7 +436,7 @@ export default function SignupModal({ isOpen, onClose }) {
             <Input
               id="password"
               type="password"
-              value="password"
+              value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Create a password"
               className="bg-gray-800 text-white border-gray-700"

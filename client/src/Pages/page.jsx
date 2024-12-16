@@ -2,7 +2,7 @@ import Header from "./LandingPage/Header";
 import HeroSection from "./LandingPage/HeroSection";
 import FeaturesSection from "./LandingPage/FeaturesSection";
 import Login from "./LandingPage/Login";
-import SignUp from "./LandingPage/SignUp";
+// import SignUp from "./LandingPage/SignUp";
 import MockupSection from "./LandingPage/MockUpSection";
 import Footer from "./LandingPage/Footer";
 import ComparisonSection from "./LandingPage/ComparisonSection";
@@ -22,8 +22,8 @@ export default function LandingPage() {
         <HeroSection />
         <MockupSection />
         <FeaturesSection />
-        <Login />
-        <SignUp />
+        {/* <Login /> */}
+        {/* <SignUp /> */}
         <Howitwork />
         <ScreenshotsSection />
         <ComparisonSection />
