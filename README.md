@@ -40,4 +40,28 @@ Welcome to **HisaabKitab**, a powerful daily-expenses sharing application design
        **Start the backend server:**
       cd client
       npm run dev
-     
+   
+# API Endpoints
+
+## Authentication
+
+- **Login**  
+  `POST http://localhost:5001/api/auth/login`
+
+- **Check Status**  
+  `GET http://localhost:5001/api/auth/status`
+
+- **Register**  
+  `POST http://localhost:5001/api/auth/register`
+
+## Transactions
+
+- **Add Transaction**  
+  `POST http://localhost:5001/api/transactions/addTransaction`
+
+- **Get Transactions**  
+  `GET http://localhost:5001/api/transactions/getTransactions`
+
+- **Get Total Balance**  
+  `GET http://localhost:5001/api/transactions/getTotalBalance`
+
