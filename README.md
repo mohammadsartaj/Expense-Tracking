@@ -32,12 +32,12 @@ Welcome to **HisaabKitab**, a powerful daily-expenses sharing application design
    cd client
    npm install
 4. Run the app:
-   **.** Start the backend server:
-     ```bash
+   ```bash
+    ** Start the backend server:**
       cd Backend
       npm run dev
-  **.** Start the backend server:
-      ```bash
+    ```bash
+       **Start the backend server:**
       cd client
       npm run dev
      
