@@ -77,32 +77,35 @@ The server will start on http://localhost:5000 by default.
 
 
 **🛠 Installing Key Technologies**
-```
-1. MongoDB
+**1. MongoDB**
 Local Installation: Follow the official MongoDB installation guide.
 Cloud Instance: Use MongoDB Atlas for a cloud-based MongoDB setup.
+```
+ npm install mongoose
+```
+---
 **2. Nodemon**
-Nodemon automatically restarts the server whenever you make changes to the code. Install it globally:
-
-bash
-Copy code
+**Nodemon automatically restarts the server whenever you make changes to the code. Install it globally:**
+```
 npm install -g nodemon
+```
+---
 **3. Express.js**
 Express.js is installed via npm install. It’s included in the dependencies list.
-
-To manually add Express.js to your project:
-
-bash
-Copy code
+**To manually add Express.js to your project:**
+```
 npm install express
+```
+---
 **4. Axios**
-Axios is used for HTTP requests and can be installed as follows:
-
-bash
-Copy code
+**Axios is used for HTTP requests and can be installed as follows:**
+```
 npm install axios
+```
+----
 **5. CORS**
-CORS enables cross-origin requests between the client and the backend. Install it using:
+**CORS enables cross-origin requests between the client and the backend. Install it using:**
+```
 npm install cors
 ```
 ---
