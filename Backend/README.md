@@ -28,3 +28,49 @@ Clone the project and navigate to the backend directory:
 ```bash
 git clone https://github.com/your-username/HisaabKitab.git
 cd HisaabKitab/backend
+```
+**3. Install Dependencies**
+Install all required dependencies:
+```
+npm install
+This will install the following:
+```
+**Dependencies:**
+```
+axios: For handling HTTP requests.
+bcryptjs: For securely hashing passwords.
+cors: Middleware for enabling cross-origin requests.
+dotenv: For managing environment variables.
+express: Framework for building RESTful APIs.
+jsonwebtoken: For secure user authentication with tokens.
+mongoose: For interacting with MongoDB.
+nodemailer: For sending transactional emails.
+passport and passport-local: For handling authentication.
+Dev Dependencies:
+nodemon: For automatic server restarts during development.
+```
+**4. Set Up MongoDB**
+Install MongoDB Locally:
+Download MongoDB and follow the installation instructions for your operating system.
+Start the MongoDB service:
+```
+mongod
+Alternatively, you can use MongoDB Atlas to set up a cloud-based MongoDB instance.
+```
+Create a .env File: In the backend/ directory, create a .env file with the following keys:
+**.env :**
+```
+MONGO_URI=your-mongodb-connection-uri
+JWT_SECRET=your-jwt-secret
+EMAIL_SERVICE=your-email-service
+EMAIL_USER=your-email-address
+EMAIL_PASS=your-email-password
+Replace your-mongodb-connection-uri with your local or cloud MongoDB connection string.
+```
+
+**5. Start the Backend Server**
+Run the backend in development mode:
+```
+npm run dev
+The server will start on http://localhost:5000 by default.
+```
